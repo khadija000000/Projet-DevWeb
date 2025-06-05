@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Créer un événement</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <header>
+    <h1>🎯 Gestion des Événements</h1>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form id="eventForm">
+        <input type="hidden" id="eventId">
+        <label>Titre :</label>
+        <input type="text" id="title" required>
+
+
+        <label>Description :</label>
+        <textarea id="description" required></textarea>
+
+        <label>Date :</label>
+        <input type="date" id="date" required>
+
+        <label>Heure :</label>
+        <input type="time" id="time" required>
+
+        <label>Lieu :</label>
+        <input type="text" id="location" required>
+
+        <label>Catégorie :</label>
+        <select id="category">
+          <option value="conférence">Conférence</option>
+          <option value="Enactus">Enactus</option>
+          <option value="sport">Sport</option>
+          <option value="CIT">CIT</option>
+          <option value="CAS">CAS</option>
+        </select>
+
+        <label>Organisateur :</label>
+        <input type="text" id="organizer" required>
+
+        <label>Public concerné :</label>
+        <div class="audience-options">
+          <label><input type="radio" name="audience" value="Interne" required> Interne</label>
+          <label><input type="radio" name="audience" value="Externe"> Externe</label>
+          <label><input type="radio" name="audience" value="Interne & Externe"> Les deux</label>
+        </div>
+
+        <label>Invités :</label>
+        <input type="text" id="guests" placeholder="Invités séparés par virgule">
+
+        
+
+        
+
+        <div class="form-buttons">
+          
+          <button type="submit" class="btn" > 💾 Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  
+  <script src="create_event.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,616 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+.filters {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filters label {
+  font-weight: bold;
+}
+
+#events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 300px;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.event-card p {
+  margin: 0.5rem 0;
+}
+
+.event-card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.event-card .btn:hover {
+  background-color: #0055aa;
+}
+.event-detail-section {
+  padding: 2rem;
+}
+
+.event-detail {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.event-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal-content input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content .btn {
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Style de la barre supérieure */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Style pour les boutons dans le header */
+header button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header button:hover {
+  background-color: #45a049;
+}
+
+/* Cachage par défaut du bouton de déconnexion */
+#logoutButton {
+  display: none;
+}
+
+/* Optionnel : centrer le titre */
+header h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+.btn-edit {
+  background-color: #888;
+  margin-left: 10px;
+}
+
+.btn-edit:hover {
+  background-color: #555;
+}
+body {
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.form-container {
+  background-color: white;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.form-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0055aa;
+}
+
+.btn-delete {
+  background-color: #cc0000;
+}
+
+.btn-delete:hover {
+  background-color: #990000;
+}
+.audience-options {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.audience-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: normal;
+  background: #f1f5f9;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.audience-options input[type="radio"] {
+  accent-color: #003366;
+}
+
+.audience-options label:hover {
+  background-color: #e0e7ef;
+}
+/* Ajout d'une classe pour styliser chaque événement créé */
+.event {
+  background-color: #f4f4f9;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.event img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.event h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event p {
+  margin: 5px 0;
+}
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.audience-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.audience-options label {
+  background: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #003366;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0055aa;
+}
+.event-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+/*  PAGE D'ACCUEIL - index.html  */
+body.index-page {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  height: 100vh;
+  background-image: url("inpt.jpg"); 
+  background-size: cover;        /* étire sans déformer */
+  background-repeat: no-repeat;
+  background-position: center center; /* centre horizontalement + verticalement */
+  background-attachment: fixed;  /* reste figée au scroll */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+.index-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.index-page .btn {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.index-page .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* ===== PAGES LOGIN / SIGNUP ===== */
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #399adb, #022027);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.auth-page h1 {
+  margin-bottom: 2rem;
+}
+
+.auth-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.auth-form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+.auth-form input,
+.auth-form select,
+.auth-form button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.auth-form input,
+.auth-form select {
+  background-color: #ffffffcc;
+  color: #000;
+}
+
+.auth-form button {
+  background-color: #006699;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #004d66;
+}
+/* 🌍 Couleurs inspirées de l’INPT */
+:root {
+  --inpt-blue: #002147;
+  --inpt-red: #c8102e;
+  --light-gray: #f0f2f5;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light-gray);
+  color: var(--inpt-blue);
+}
+
+header {
+  background-color: var(--inpt-blue);
+  color: var(--white);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.auth-buttons button {
+  background-color: var(--white);
+  color: var(--inpt-blue);
+  border: 2px solid var(--white);
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  background-color: var(--inpt-red);
+  color: white;
+}
+
+/*  Contenu principal */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/*  Info utilisateur */
+#user-info {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/*  Filtres */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filter-group label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/*  Cartes d’événement */
+.event-card {
+  background-color: var(--light-gray);
+  border-left: 5px solid var(--inpt-blue);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.event-card h3 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: var(--inpt-blue);
+  color: var(--white);
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--inpt-red);
+}
+
+.btn-delete {
+  background-color: var(--inpt-red);
+}
+
+.btn-delete:hover {
+  background-color: #990000;
+}
+
+/*  Action bar */
+#action-bar {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+
+
+
+.event-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.event-details {
+  flex: 1 1 300px;
+}
+
+.image-container {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+

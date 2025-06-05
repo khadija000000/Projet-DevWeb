@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body class="auth-page">
+  <h1>Créer un compte</h1>
+  <form id="signupForm" class="auth-form">
+    <label for="username">Nom d'utilisateur :</label>
+    <input type="text" id="username" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" required>
+
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" required>
+
+    <label for="role">Rôle :</label>
+    <select id="role" required>
+      <option value="student">Étudiant</option>
+      <option value="organizer">Organisateur</option>
+    </select>
+
+    <button type="submit">S'inscrire</button>
+  </form>
+  <script src="auth.js"></script>
+</body>
+</html>

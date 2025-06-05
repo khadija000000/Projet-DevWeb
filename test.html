@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Events Hub – INPT</title>
+  <link rel="stylesheet" href="test.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1> Campus Events Hub</h1>
+    <div class="auth-buttons">
+      <button id="loginButton" onclick="window.location.href='login.html'">Se connecter</button>
+      <button id="logoutButton" style="display:none;" onclick="logout()">Se déconnecter</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 👤 Utilisateur -->
+    <section id="user-info">
+      <p id="userDisplay">Connecté(e) en tant que ...</p>
+    </section>
+
+    <!-- 🧭 Filtres -->
+    <section class="filters">
+      <div class="filter-group">
+        <label for="category-filter">Catégorie :</label>
+        <select id="category-filter">
+          <option value="all">Toutes</option>
+          <option value="conférence">Conférence</option>
+          <option value="Enactus">Enactus</option>
+          <option value="sport">Sport</option>
+          <option value="CIT">CIT</option>
+          <option value="CAS">CAS</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="date-filter">Date :</label>
+        <input type="date" id="date-filter">
+      </div>
+    </section>
+
+    <!-- 📅 Événements -->
+    <section id="events-section">
+      <h2>📅 Événements à venir</h2>
+      <div id="events-container"></div>
+    </section>
+
+    <!-- ➕ Action organisateur -->
+    <div id="action-bar"></div>
+
+  </main>
+  <button id="btn-create-event" style="display:none;" onclick="window.location.href='create-event.html'"> Créer événement</button>
+
+
+
+
+  <script src="auth.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>
